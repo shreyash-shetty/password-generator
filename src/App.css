@@ -1,38 +1,109 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+
+.heading {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 3rem;
+  color: aliceblue;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 100%;
+  width: 45em;
+  height:15em;
+  margin-top: 50px; 
+  background-color: rgb(72, 69, 69);
+  border-radius: 20px;
+  color: rgb(253, 71, 5);
+  accent-color: rgb(253, 71, 5);
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+input{
+  width:30em;
+  height:3rem;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  outline-style: none;
+  border-style: none;
+  
+}
+
+button{
+  width:60px ;
+  height: 3.13rem;
+  outline-style: none;
+  background-color: rgb(34, 81, 222);
+  color: aliceblue;
+  font-size: 0.8rem;
+  border-style: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  cursor: pointer;
+
+}
+button:hover{
+     background-color:rgb(5, 37, 132) ;
+ 
+}
+
+
+.rangeContainer{
+display: flex;
+align-items: center;
+margin-top: 1rem;
+column-gap: 50px;
+font-size: 1.3em;
+
+}
+
+.range{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  column-gap: 5px;
+  
+}
+
+.rangeCursor{
+  cursor: pointer;
+  width:9rem;
+  
+
+}
+
+.num{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#numberInput {
+  cursor: pointer;
+  width:1rem;
+  height : 1rem;
+  
+}
+
+#charInput{
+  cursor: pointer;
+  width:1rem;
+  height : 1rem;
+}
+
+
+ .char{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
